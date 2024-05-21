@@ -22,9 +22,9 @@ mongoose
     console.log(err.message);
   });
 
-app.get("/", (_req, res) => {
-  return res.send("Ping Successful");
-});
+app.get('/',async(req,res)=>{
+    res.status(200).send('potframe-backend working on vercel :)')
+})
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
