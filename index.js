@@ -22,8 +22,8 @@ mongoose
     console.log(err.message);
   });
 
-app.get("/ping", (_req, res) => {
-  return res.json({ msg: "Ping Successful" });
+app.get("/", (_req, res) => {
+  return res.send("Ping Successful");
 });
 
 app.use("/api/auth", authRoutes);
