@@ -23,7 +23,7 @@ mongoose
   });
 
 app.get('/',async(req,res)=>{
-    res.status(200).send('potframe-backend working on vercel :)')
+    res.status(200).send('conversify-backend working on vercel :)')
 })
 
 app.use("/api/auth", authRoutes);
